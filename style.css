@@ -1,0 +1,110 @@
+.tareasPendientes{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.titulo {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding: 15px 30px;
+    width: fit-content;
+    margin: 30px auto;
+
+    text-shadow:
+        0 0 5px white,
+        0 0 10px blue,
+        0 0 20px blue,
+        0 0 40px blue;
+
+    background: ff69b4;
+
+    animation: brillo 1.5s infinite alternate;
+}
+
+@keyframes brillo {
+    from {
+        opacity: 0.75;
+        text-shadow:
+            0 0 5px black,
+            0 0 10px aliceblue,
+            0 0 20px aliceblue;
+    }
+
+    to {
+        opacity: 1;
+        text-shadow:
+            0 0 5px black,
+            0 0 15px aliceblue,
+            0 0 30px aliceblue,
+            0 0 60px aliceblue;
+    }
+}
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #ff69b4 0%,
+        #ff7eb3 35%,
+        #ff8c69 70%,
+        #ff9f43 100%
+    );
+}
+
+.subtitulo{
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.escribir{
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+.boton{
+    display: block;
+    margin: 10px auto;
+}
+
+.filtros{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.noTareas{
+    text-align: center;
+    color: white;
+}
+
+.nombreTarea{
+    color: white;
+    text-align: center;
+}
+
+.infoTarea{
+    color:white;
+    text-align: center;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+</head>
+<body>
+    <h1 class="titulo">Lista de tareas</h1>
+    <div class="subtitulo">
+        <h2>Esta página trata sobre lista de tareas</h2>
+    </div>
+    <div>
+        <h3 class="subtitulo">Aquí ingresa el nombre de la tarea</h3>
+        <input class="escribir" type="text" id="tarea" placeholder="Ej: Comprar" autocomplete="off">
+        <h3 class="subtitulo">Aquí ingresa la descripción de la tarea</h3>
+        <input class="escribir" type="text" id="info" placeholder="Ej: Comida" autocomplete="off">
+    </div>   
+    <button id="agregarButton" class="boton">Agregar</button>
+    <section>
+        <div class="counter">
+            <span id="contador">0 tareas pendientes</span>
+        </div>
+            <!--Botones para filtrar las tareas-->
+        <div class="filtros">
+            <!--Mostrar todas las tareas-->
+            <button class="botonP" class="filter active" data-filter="todas"> Todas </button>
+            <!--Mostrar las tareas pendientes-->
+            <button class="botonP" class="filter" data-filter="pendientes"> Pendientes </button>
+            <!--Mostrar las tareas terminadas-->
+            <button class="botonP" class="filter" data-filter="terminadas"> Terminadas </button>
+        </div>
+        <!--Lista de Tareas-->
+        <section id="listaTareas" class="Listas">
+        </section>
+        <!--Acá te tira un mensaje cuando no hay tareas-->
+        <p id="noTareas" class="noTareas">
+            No tenes tareas todavía.
+        </p>
+    
+    
+    
+    
+    </section> 
+    <script src="script.js"></script>
+</body>
+</html>
